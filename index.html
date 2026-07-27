@@ -1,140 +1,61 @@
 <!DOCTYPE html>
-<html lang="lo">
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>By Shop</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-}
-
-header{
-background:#111;
-color:#fff;
-padding:18px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
-}
-
-.search{
-padding:15px;
-}
-
-.search input{
-width:100%;
-padding:12px;
-border-radius:10px;
-border:1px solid #ccc;
-font-size:16px;
-}
-
-.banner{
-margin:15px;
-padding:45px;
-background:linear-gradient(135deg,#ff4d4d,#ff7a7a);
-color:white;
-border-radius:15px;
-text-align:center;
-font-size:30px;
-font-weight:bold;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-padding:15px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-padding:10px;
-}
-
-.price{
-padding:0 10px;
-font-size:22px;
-color:red;
-font-weight:bold;
-}
-
-button{
-width:calc(100% - 20px);
-margin:10px;
-padding:12px;
-background:black;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-}
-
-footer{
-margin-top:20px;
-background:#111;
-color:white;
-padding:20px;
-text-align:center;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>🛍️ By Shop</header>
-
-<div class="search">
-<input type="text" placeholder="🔍 ຄົ້ນຫາສິນຄ້າ...">
-</div>
+<header>
+    By Shop
+</header>
 
 <div class="banner">
-Fashion Collection 2026
+    <h2>Fashion Collection 2026</h2>
+    <p>เสื้อผ้าแฟชั่น ราคาพิเศษ</p>
 </div>
 
 <div class="products">
 
-<div class="card">
-<img src="https://picsum.photos/400/400?1">
-<h3>Oversize T-Shirt</h3>
-<div class="price">250,000 ກີບ</div>
-<button>ຊື້ດຽວນີ້</button>
-</div>
+    <div class="product">
+        <img src="https://picsum.photos/300/300?1">
+        <h3>Oversize T-Shirt</h3>
+        <p>250 บาท</p>
+        <button onclick="buy('Oversize T-Shirt')">
+            ซื้อเลย
+        </button>
+    </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/400?2">
-<h3>Jeans</h3>
-<div class="price">390,000 ກີບ</div>
-<button>ຊື້ດຽວນີ້</button>
-</div>
+    <div class="product">
+        <img src="https://picsum.photos/300/300?2">
+        <h3>Jeans</h3>
+        <p>390 บาท</p>
+        <button onclick="buy('Jeans')">
+            ซื้อเลย
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/300/300?3">
+        <h3>Hoodie</h3>
+        <p>590 บาท</p>
+        <button onclick="buy('Hoodie')">
+            ซื้อเลย
+        </button>
+    </div>
 
 </div>
 
 <footer>
 © 2026 By Shop
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
