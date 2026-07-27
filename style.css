@@ -59,3 +59,27 @@ button{
     border:none;
     border-radius:8px;
 }
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#111;
+color:#fff;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:18px;
+}
+
+.menu a:hover{
+color:#ff4d4d;
+}
