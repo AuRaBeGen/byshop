@@ -6,43 +6,97 @@
 <title>By Shop</title>
 
 <style>
-body{
-font-family:Arial;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
 background:#f5f5f5;
 }
 
 header{
-background:#000;
+background:#111;
+color:#fff;
+padding:18px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.search{
+padding:15px;
+}
+
+.search input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.banner{
+margin:15px;
+padding:45px;
+background:linear-gradient(135deg,#ff4d4d,#ff7a7a);
 color:white;
-padding:20px;
+border-radius:15px;
 text-align:center;
 font-size:30px;
 font-weight:bold;
 }
 
-.banner{
-background:#ff4d4d;
-color:white;
-padding:40px;
-text-align:center;
-font-size:28px;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+padding:15px;
 }
 
-.product{
+.card{
 background:white;
-margin:15px;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 8px #ccc;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.price{
+padding:0 10px;
+font-size:22px;
+color:red;
+font-weight:bold;
 }
 
 button{
-background:#000;
+width:calc(100% - 20px);
+margin:10px;
+padding:12px;
+background:black;
 color:white;
 border:none;
-padding:10px 20px;
 border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+margin-top:20px;
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
 }
 </style>
 
@@ -50,25 +104,37 @@ border-radius:8px;
 
 <body>
 
-<header>
-🛍️ By Shop
-</header>
+<header>🛍️ By Shop</header>
+
+<div class="search">
+<input type="text" placeholder="🔍 ຄົ້ນຫາສິນຄ້າ...">
+</div>
 
 <div class="banner">
-👕 ຍິນດີຕ້ອນຮັບສູ່ By Shop
+Fashion Collection 2026
 </div>
 
-<div class="product">
-<h2>ເສື້ອ Oversize</h2>
-<p>250,000 ກີບ</p>
+<div class="products">
+
+<div class="card">
+<img src="https://picsum.photos/400/400?1">
+<h3>Oversize T-Shirt</h3>
+<div class="price">250,000 ກີບ</div>
 <button>ຊື້ດຽວນີ້</button>
 </div>
 
-<div class="product">
-<h2>ກາງເກງ Jeans</h2>
-<p>390,000 ກີບ</p>
+<div class="card">
+<img src="https://picsum.photos/400/400?2">
+<h3>Jeans</h3>
+<div class="price">390,000 ກີບ</div>
 <button>ຊື້ດຽວນີ້</button>
 </div>
+
+</div>
+
+<footer>
+© 2026 By Shop
+</footer>
 
 </body>
 </html>
